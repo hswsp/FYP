@@ -1,0 +1,16 @@
+net: "models/texture/texture128/googlenet/texture_google_train_test.prototxt"
+test_iter: 4
+test_interval: 1000
+test_initialization: false
+display: 100
+average_loss: 40
+base_lr: 0.01
+lr_policy: "step"
+stepsize: 5000
+gamma: 0.96
+max_iter: 500000
+momentum: 0.9
+weight_decay: 0.0002
+snapshot: 250000
+snapshot_prefix: "examples/texture/texture_new_normal_fractal_pertex_googlenet"
+solver_mode: GPU
