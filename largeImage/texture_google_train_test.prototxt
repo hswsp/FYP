@@ -8,8 +8,9 @@ layer {
     phase: TRAIN
   }
   hdf5_data_param {
-   source: "data/texture_data/train128.txt"
+   source: "dataset/train_h5_list.txt"
    batch_size: 100
+   shuffle: true
   }
 }
 layer {
@@ -21,8 +22,9 @@ layer {
     phase: TEST
   }
   hdf5_data_param {
-   source: "data/texture_data/test128.txt"
+   source: "dataset/test_h5_list.txt"
    batch_size: 100
+   shuffle :true
   }
 }
 layer {
